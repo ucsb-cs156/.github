@@ -10,12 +10,12 @@ labels: feature
 <!-- Replace text in parentheses, then delete this comment -->
 
 * As a (role, e.g. user, admin, seller, buyer, etc.)
-* I can (perform this action in the applicaton)
+* I can (perform this action in the application)
 * So that (I can accomplish this goal)
 
 # Discussion
 
-Provide at least a 1-2 sentence expanding on the title and user story that explains the value to the application. If there are more supporting detais, screenshots of mockups of the UI, etc, those can go here.
+Provide at least a 1-2 sentence expanding on the title and user story that explains the value to the application. If there are more supporting details, screenshots of mockups of the UI, etc., those can go here.
 
 # Acceptance Criteria
 
@@ -25,16 +25,16 @@ Provide at least a 1-2 sentence expanding on the title and user story that expla
 
 # Implementation Todos
 
-Front end:
+Frontend:
 
-- [ ] First thing that must be done in the front end code.
-- [ ] Second thing that must be done in the front end code.
+- [ ] First thing that must be done in the frontend code.
+- [ ] Second thing that must be done in the frontend code.
 ...
 
-Back end:
+Backend:
 
-- [ ] First thing that must be done in the back end code.
-- [ ] Second thing that must be done in the back end code.
+- [ ] First thing that must be done in the backend code.
+- [ ] Second thing that must be done in the backend code.
 ...
 
 Testing:

@@ -7,7 +7,7 @@ labels: refactor
 
 # Discussion
 
-Provide at least a 1-2 sentence expanding on the title, and describing the part of the code to be refactored.
+Provide at least a 1-2 sentence expanding on the title and describing the part of the code to be refactored.
 
 # Acceptance Criteria
 
@@ -17,16 +17,16 @@ Provide at least a 1-2 sentence expanding on the title, and describing the part 
 
 # Implementation Todos
 
-Front end:
+Frontend:
 
-- [ ] First thing that must be done in the front end code.
-- [ ] Second thing that must be done in the front end code.
+- [ ] First thing that must be done in the frontend code.
+- [ ] Second thing that must be done in the frontend code.
 ...
 
-Back end:
+Backend:
 
-- [ ] First thing that must be done in the back end code.
-- [ ] Second thing that must be done in the back end code.
+- [ ] First thing that must be done in the backend code.
+- [ ] Second thing that must be done in the backend code.
 ...
 
 Testing:
