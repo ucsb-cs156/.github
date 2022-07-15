@@ -1,9 +1,8 @@
 ---
-name: User Story
-about: This is a template for defining user stories
+name: Refactoring
+about: This is a template for defining requests to refactor code
 title: 'REFACTOR: Short description'
-labels: feature
-assignees: ''
+labels: refactor
 ---
 
 # Discussion
