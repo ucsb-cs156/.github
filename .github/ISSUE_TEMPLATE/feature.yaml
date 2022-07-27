@@ -11,8 +11,19 @@ body:
         This template is used to report **new features** in user story format. Before starting a new issue, please check the Issues list to ensure that another user has not already suggested your feature.
         
         Note that bugs, errors, or otherwise incorrect application behavior, should be reported using the "Bug report" template instead. 
+  - type: checkboxes
+    attributes:
+      label: Have you updated the title?
+      description: Please provide a short description of the feature / user story in the "Title" field above. Be sure to keep the `FEATURE:` tag.
+      options:
+        - label: I have updated the issue's title.
+          required: true
+  - type: markdown
+    attributes:
+      value: |
+        ## User Story
 
-        ### User Story
+        Use the three blanks below to form your user story
   - type: input
     id: userStoryAsA
     attributes:
@@ -59,19 +70,14 @@ body:
       description: Describe what must be done with regards to each aspect of the codebase below to complete the above story.
       value: |
         Frontend:
-
         - [ ] First thing that must be done in the frontend code.
         - [ ] Second thing that must be done in the frontend code.
-        ...
 
         Backend:
-
         - [ ] First thing that must be done in the backend code.
         - [ ] Second thing that must be done in the backend code.
-        ...
 
         Testing:
-
         - [ ] Front end tests pass and there is adequate coverage
         - [ ] Back end tests pass and there is adequate coverage
     validations:

@@ -1,0 +1,55 @@
+name: Refactoring
+description: This is a template for defining requests to refactor code
+title: "REFACTOR: Short description of refactoring"
+labels: refactoring
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ### New Code Refactor
+
+        This template is used to suggest **code refactors** for existing code. Before starting a new refactor request, please check the Issues list to ensure that another user has not already suggested your refactor.
+  - type: checkboxes
+    attributes:
+      label: Have you updated the title?
+      description: Please provide a short description of the refactor in the "Title" field above. Be sure to keep the `REFACTOR:` tag.
+      options:
+        - label: I have updated the issue's title.
+          required: true
+  - type: textarea
+    id: discussion
+    attributes:
+      label: Discussion
+      description: |
+        Provide at least a 1-2 sentence expanding on the title and describing the part of the code to be refactored.
+    validations:
+      required: true
+  - type: textarea
+    id: acceptanceCriteria
+    attributes:
+      label: Acceptance Criteria
+      description: Describe a list of requirements that should be true when the refactor is complete using checkbox list format.
+      value: |
+        - [ ] First thing that should be true when refactor is done.
+        - [ ] Second thing that should be true when refactor is done.
+    validations:
+      required: true
+  - type: textarea
+    id: implementationTodos
+    attributes:
+      label: Implementation Todos
+      description: Describe what must be done with regards to each aspect of the codebase below to complete the above refactor.
+      value: |
+        Frontend:
+        - [ ] First thing that must be done in the frontend code.
+        - [ ] Second thing that must be done in the frontend code.
+
+        Backend:
+        - [ ] First thing that must be done in the backend code.
+        - [ ] Second thing that must be done in the backend code.
+
+        Testing:
+        - [ ] Front end tests pass and there is adequate coverage
+        - [ ] Back end tests pass and there is adequate coverage
+    validations:
+      required: true

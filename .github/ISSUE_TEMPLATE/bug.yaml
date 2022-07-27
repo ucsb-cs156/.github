@@ -9,6 +9,13 @@ body:
         ### New Bug Report
 
         This template is used to report issues, errors, or otherwise incorrect behavior present in this project. Before starting a new bug report, please check the Issues list to ensure that another user has not already reported your bug.
+  - type: checkboxes
+    attributes:
+      label: Have you updated the title?
+      description: Please provide a short description of the bug in the "Title" field above. Be sure to keep the `BUG:` tag.
+      options:
+        - label: I have updated the issue's title.
+          required: true
   - type: textarea
     id: summary
     attributes:
