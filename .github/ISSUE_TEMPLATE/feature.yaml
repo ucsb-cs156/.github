@@ -1,0 +1,78 @@
+name: User Story
+description: This is a template for defining new user stories
+title: "FEATURE: Short description of feature"
+labels: feature
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ### New Feature / User Story
+
+        This template is used to report **new features** in user story format. Before starting a new issue, please check the Issues list to ensure that another user has not already suggested your feature.
+        
+        Note that bugs, errors, or otherwise incorrect application behavior, should be reported using the "Bug report" template instead. 
+
+        ### User Story
+  - type: input
+    id: userStoryAsA
+    attributes:
+      label: As a...
+      placeholder: role, e.g. user, admin, seller, buyer, etc.
+    validations:
+      required: true
+  - type: input
+    id: userStoryICan
+    attributes:
+      label: I can...
+      placeholder: perform this action in the application
+    validations:
+      required: true
+  - type: input
+    id: userStorySoThat
+    attributes:
+      label: So that...
+      placeholder: I can accmplish this goal
+    validations:
+      required: true
+  - type: textarea
+    id: discussion
+    attributes:
+      label: Discussion
+      description: |
+        Provide at least a 1-2 sentence expanding on the title and user story that explains the value to the application. If there are more supporting details, screenshots of mockups of the UI, etc., those can go here.
+    validations:
+      required: true
+  - type: textarea
+    id: acceptanceCriteria
+    attributes:
+      label: Acceptance Criteria
+      description: Describe a list of requirements that should be true when the story is complete using checkbox list format.
+      value: |
+        - [ ] First thing that should be true when story is done.
+        - [ ] Second thing that should be true when story is done.
+    validations:
+      required: true
+  - type: textarea
+    id: implementationTodos
+    attributes:
+      label: Implementation Todos
+      description: Describe what must be done with regards to each aspect of the codebase below to complete the above story.
+      value: |
+        Frontend:
+
+        - [ ] First thing that must be done in the frontend code.
+        - [ ] Second thing that must be done in the frontend code.
+        ...
+
+        Backend:
+
+        - [ ] First thing that must be done in the backend code.
+        - [ ] Second thing that must be done in the backend code.
+        ...
+
+        Testing:
+
+        - [ ] Front end tests pass and there is adequate coverage
+        - [ ] Back end tests pass and there is adequate coverage
+    validations:
+      required: true
