@@ -1,0 +1,81 @@
+name: Epic
+description: This is a template for defining new epics
+title: "EPIC: Short description of epic"
+labels: feature
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ### Epic
+
+        This template is used to report and **epic** of **new features** in user story format. 
+        Before starting a new issue, please check the Issues list to ensure that another user has not already suggested your feature.
+        
+  - type: checkboxes
+    attributes:
+      label: Have you updated the title?
+      description: Please provide a short description of the feature / user story in the "Title" field above. Be sure to keep the `FEATURE:` tag.
+      options:
+        - label: I have updated the issue's title.
+          required: true
+  - type: markdown
+    attributes:
+      value: |
+        ## User Story
+
+        Use the three blanks below to form your user story
+  - type: input
+    id: userStoryAsA
+    attributes:
+      label: As a...
+      placeholder: role, e.g. user, admin, seller, buyer, etc.
+    validations:
+      required: true
+  - type: input
+    id: userStoryICan
+    attributes:
+      label: I can...
+      placeholder: perform this action in the application
+    validations:
+      required: true
+  - type: input
+    id: userStorySoThat
+    attributes:
+      label: So that...
+      placeholder: I can accmplish this goal
+    validations:
+      required: true
+  - type: textarea
+    id: discussion
+    attributes:
+      label: Discussion
+      description: |
+        Provide at least a 1-2 sentence expanding on the title and user story that explains the value to the application. If there are more supporting details, screenshots of mockups of the UI, etc., those can go here.
+    validations:
+      required: true
+  - type: textarea
+    id: acceptanceCriteria
+    attributes:
+      label: Acceptance Criteria
+      description: Describe a list of requirements that should be true when the story is complete using checkbox list format.
+      value: |
+        - [ ] First thing that should be true when story is done.
+        - [ ] Second thing that should be true when story is done.
+    validations:
+      required: true
+  - type: textarea
+    id: implementationTodos
+    attributes:
+      label: Implementation Todos
+      description: Describe what must be done with regards to each aspect of the codebase below to complete the above story.
+      value: |
+        F1: Frontend Issue name goes here
+        - [ ] First thing that must be done in the frontend code.
+        - [ ] Second thing that must be done in the frontend code.
+
+        B1: Backend Issue name goes here:
+        - [ ] First thing that must be done in the backend code.
+        - [ ] Second thing that must be done in the backend code.
+
+    validations:
+      required: true
